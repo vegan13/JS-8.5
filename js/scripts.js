@@ -1,10 +1,15 @@
-var a = 1,
-    h = 1,
-    triangleArea;
+var a = 0,
+    b = 2,
+    value;
 
-a = prompt('Wpisz długość podstawy trójkąta');
-h = prompt('Wpisz wysokość trójkąta');
+value = (a * a) + (2 * a * b) - (b * b);
 
-triangleArea = a * h / 2;
+console.log('Wynik działania wynosi ' + value);
 
-console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
+if (value > 0) {
+    console.log('Wynik jest dodatni');
+} else if (value < 0) {
+    console.log('Wynik jest ujemny');
+} else {
+    console.log('Wynik jest równy ZERO');
+}
